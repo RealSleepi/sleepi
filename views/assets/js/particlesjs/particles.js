@@ -15,7 +15,7 @@ tsParticles.load("particles-js", {
             "value": "#ffffff"
         },
         "shape": {
-            "type": "triangle",
+            "type": "spiral",
             "stroke": {
                 "width": 2,
                 "color": "#2e3440"
