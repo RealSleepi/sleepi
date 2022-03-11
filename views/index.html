@@ -28,8 +28,32 @@
     </div>
     <div id="mainbody" class="fullwidth">
         <div class="box-home text-center">
-            <h1>You hav&#173;e 90 d&#173;ays</h1>
-            <h1>lef&#173;t on your subscription</h1>
+        <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("June 9, 2022 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+    
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+    
+         // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  
+         // Output the result in an element with id="demo"
+         document.getElementById("demo").innerHTML = days + " days left in your subscription";
+    
+        // If the count down is over, write some text 
+         if (distance < 0) {
+          clearInterval(x);
+           document.getElementById("demo").innerHTML = "EXPIRED";
+         }
+        }, 1000);
+        </script>
             <a class="hovermessage buttonlink startbutton" data-hover-text="Epic!" href="#scrollfix">By<wbr>p<wbr>a<wbr>s<wbr>s n<wbr>ow?</a>
         </div>
         <div id="scrollfix">&#173;<br>&#173;</div>
